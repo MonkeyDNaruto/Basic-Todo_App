@@ -4,7 +4,7 @@ const connectDB = async () => {
   try {
     console.log("connecting to database...");
     const response = await mongoose.connect(
-      "mongodb://localhost:27017/todo-app"
+      "mongodb+srv://Todo-App:asl1999@nodetuts.vwjd1w1.mongodb.net/todo-app"
     );
     console.log("database connected:", response.connection.name);
   } catch (e) {
